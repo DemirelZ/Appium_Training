@@ -163,6 +163,27 @@ public class Scenarios {
 
     }
 
+    @Test
+    public void scenario_5() {
+
+        driver.get("https://demowebshop.tricentis.com/contactus");
+
+        By inputs = By.cssSelector(".page-body input[type='text']");
+
+        String[] arr= {"text1", "text2"};
+        for (int i = 0; i < 2; i++) {
+
+            driver.findElements(inputs).get(i);
+
+        }
+
+
+
+
+
+    }
+
+
 
 
     void click(By locator) {
